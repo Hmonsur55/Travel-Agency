@@ -6,6 +6,9 @@
 h1, h2, h3,h4,h5,h6{
     font-family: 'Playfair Display', serif;
 }
+img{
+    width: 100%;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -17,7 +20,7 @@ body{
     --text-color: #777;
   }
 section{
-    padding: 60px 30px;
+    padding: 50px 30px;
 }
 .flex{
     display: flex;
@@ -188,6 +191,9 @@ section{
 }
 
 /* services */
+/* .services-des{
+    padding-left:20px ;
+} */
 .service h3{
     font-size: 18px;
     color: var(--primary-color);
@@ -199,6 +205,63 @@ section{
     line-height: 55px;
     margin-bottom: 16px;
 }
+.service img{
+    width: 80px;
+}
+
+.service-package{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+    grid-gap: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.service-item {
+    padding: 20px;
+    box-shadow: 0 0 25px #ddd;
+    border-radius: 10px;
+}
+/* destination section */
+
+.destination{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
+    grid-gap: 30px;
+    
+}
+.destination-des h3{
+    font-size: 18px;
+    color: var(--primary-color);
+    line-height: 27px;
+    font-weight: 500;
+}
+.destination-des h2 {
+    font-size: 46px;
+    line-height: 55px;
+    margin-bottom: 16px;
+}
+.destination-des p {
+    margin-bottom: 60px;
+}
+.img-box img {
+    border-radius: 5px;
+}
+
+.img-box span {
+    display: inline-block;
+    padding: 2px 35px;
+    box-shadow: 0 0 25px #ddd;
+    border-radius: 50px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 10px 0px;
+}
+.des-cap h2 {
+    margin-bottom: 15px;
+}
+
+
 /* footer  */
 
 .pg-footer {
@@ -438,16 +501,7 @@ section{
     width: 150px;
   }
   
-  
-  
-  
-  
-  
-  
  
-  
-  
-  
   
   @media (min-width: 568px) {
     /* .footer-content-column {
