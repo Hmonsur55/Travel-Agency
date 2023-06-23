@@ -222,6 +222,13 @@ section{
     box-shadow: 0 0 25px #ddd;
     border-radius: 10px;
 }
+.service-item {
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+  }
 /* destination section */
 
 .destination{
@@ -259,6 +266,25 @@ section{
 }
 .des-cap h2 {
     margin-bottom: 15px;
+}
+
+/* full background image section */
+.background-image{
+    background-image: url(https://images.unsplash.com/photo-1520470324886-a68a7df92a0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1333&q=80) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			/* background-attachment: fixed; */
+			background-size:  cover;
+			background-color: #999;
+            padding: 250px 0px;
+            text-align: center;
+            margin: 65px 0px;
+  
+}
+
+.background-image img{
+    width: 100px;
+
 }
 
 
@@ -503,11 +529,34 @@ section{
   
  
   
-  @media (min-width: 568px) {
-    /* .footer-content-column {
-        width: 49.99%;
-    } */
+  
+
+  /* popup */
+  
+  #popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
   }
   
+  #videoPopup {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    /* background-color: #fff; */
+    margin: 100px auto;
+    padding: 20px;
+  }
+  
+  #closePopupBtn {
+    position: absolute;
+    top: 24px;
+    right: 18px;
+  }
   
   
