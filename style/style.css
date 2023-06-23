@@ -1,4 +1,24 @@
+/* google fonts poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* google fonts plyfair display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+h1, h2, h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
 /* default css */
+:root {
+    --primary-color: #fc8621;
+    --secondary-color: #fff;
+    --third-color: #efefef;
+    --text-color: #777;
+  }
+section{
+    padding: 60px 30px;
+}
 .flex{
     display: flex;
 }
@@ -11,14 +31,6 @@
 .justify-center{
     justify-content: center;
 }
-
-
-:root {
-    --primary-color: #fc8621;
-    --secondary-color: #fff;
-    --third-color: #efefef;
-    --text-color: #777;
-  }
 
 *,
 *::after,
@@ -65,15 +77,15 @@
     order: 2;
     display: flex;
 }
-.logo{
+.logo img{
     order: 1;
-    font-size: 2.3rem;
+    width: 150px;
 }
 
 .menu-items li{
     list-style: none;
-    margin-left: 1.5rem;
-    font-size: 1.3rem;
+    margin-left: 24px;
+    font-size: 20px;
 }
 
 .navbar a{
@@ -90,7 +102,7 @@
 /* header image */
 .hero {
     background: linear-gradient(#0006, #0006), url(https://preview.colorlib.com/theme/passport/images/hero_1.jpg.webp);
-  /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+  
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,17 +123,18 @@
     margin: 0;
     font-size: 60px;
     color: var(--secondary-color);
-    font-weight: 400;
+    font-weight: 700;
+    line-height: 72px;
   }
   
-  h2 {
-    margin: 0;
-    color:var(--secondary-color);
-    font-weight: 400;
-    font-size: 1.2rem;
-  }
+ 
   .watch-icon{
    margin-top: 40px;
+  }
+  .watch-icon h2{
+   color: var(--secondary-color);
+   font-weight: 400;
+   font-size: 20px;
   }
   .watch-icon img{
     width: 80px;
@@ -130,6 +143,62 @@
   }
 
 
+
+  /* about */
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-gap: 30px;
+    margin: 60px 0px;
+}
+.about h3{
+    font-size: 18px;
+    color: var(--primary-color);
+    line-height: 27px;
+    font-weight: 500;
+}
+.about h2 {
+    font-size: 46px;
+    line-height: 55px;
+    margin-bottom: 16px;
+}
+.about p{
+    margin-bottom: 16px;
+}
+.about a {
+    margin: 48px 0px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: var(--primary-color);
+    border-radius: 50px;
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+  .about-img img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  .about-img img:nth-child(2) {
+    position: relative;
+    top: 40px;
+    left: 25px;
+}
+
+/* services */
+.service h3{
+    font-size: 18px;
+    color: var(--primary-color);
+    line-height: 27px;
+    font-weight: 500;
+}
+.service h2 {
+    font-size: 46px;
+    line-height: 55px;
+    margin-bottom: 16px;
+}
 /* footer  */
 
 .pg-footer {
