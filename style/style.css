@@ -321,7 +321,7 @@ margin-bottom: 26px;
     grid-gap: 30px;
     margin-top: 55px;
 }
-.blog-list span img{
+.blog-list .span img{
     width: 25px !important;
   
 }
@@ -329,7 +329,7 @@ margin-bottom: 26px;
    margin: 10px 0px;
   
 }
-.blog-list span{
+.blog-list .span{
    /* padding: 5px 10px; */
    opacity: 0.5;
   
@@ -341,7 +341,7 @@ margin-bottom: 26px;
     color: var(--primary-color);
 }
 
-.blog-list span img{
+.blog-list .span img{
     max-width: 300px;
     height: auto;
     border-radius: 10px;
@@ -565,4 +565,7 @@ margin-bottom: 26px;
     right: 18px;
   }
   
-  
+  .iframe {
+    width: 600px;
+    height: 400px;
+  }
